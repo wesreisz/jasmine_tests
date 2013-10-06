@@ -21,8 +21,6 @@ describe("Ten Simple Javascript Exercises", function(){
 			expect(function() {
 			    max("A string",12);
 			}).toThrow("Invalid Parameter");
-		});
-		it("max test 4, invalid parameters", function(){
 			expect(function() {
 			    max(12,"A string");
 			}).toThrow("Invalid Parameter");
