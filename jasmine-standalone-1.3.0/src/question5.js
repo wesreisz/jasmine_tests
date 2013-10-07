@@ -15,4 +15,17 @@ function Calculator(){
 		}
 		return result;
 	};
+	this.multiply=function(val){
+		var result=0;
+		for(var i=0;i<val.length;i++){
+			if(typeof val[i] == 'number'){
+				if(i==0){
+					result = val[i];
+				}else{
+					result = result * val[i];
+				}
+			}
+		}
+		return result;
+	};
 }
