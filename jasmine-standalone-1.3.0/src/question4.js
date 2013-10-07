@@ -7,7 +7,7 @@ is fun") should return the string "tothohisos isos fofunon".
 function Translator(){
 	this.isAVowel = function(aCharacter){
 		var vowels = ['a','e','i','o','u'];
-		console.log("Character: " + aCharacter);
+		//console.log("Character: " + aCharacter);
 		for(var n=0;n<vowels.length;n++){
 			if (vowels[n]===aCharacter){
 				return true;
