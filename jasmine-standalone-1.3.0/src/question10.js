@@ -7,15 +7,8 @@ charFreq("abbabcbdbabdbdbabababcbcbab").
 function StringUtil4(){
 	this.charFreq = function(input){
 		var result = {};
-		result.contains = function(element){
-			if(result.hasOwnProperty(element)){
-				return true;
-			}else{
-				return false;
-			}
-		};
 		for(var i in input){
-			if(result.contains(input[i])){
+			if(result.hasOwnProperty(input[i])){
 				result[input[i]]++;
 			}else{
 				result[input[i]] = 1;
